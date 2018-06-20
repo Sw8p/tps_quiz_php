@@ -1,0 +1,145 @@
+/* --------------- HEADER --------------- */
+.jumbotron#head_box{
+  margin-bottom: 0;
+  border-radius: 0;
+  padding: 2rem;
+  padding-bottom: .5rem;
+}
+.jumbotron#head_box h3{
+  font-variant: small-caps;
+}
+
+/* --------------- PROGRESS_BAR --------------- */
+#progress{
+  margin-top: 2rem;
+}
+progress{
+  display: block;
+  margin: auto;
+}
+#progress_barre{
+  display: none;
+  text-align: center;
+}
+#progress_barre_bootstrap{
+  margin: 1rem;
+}
+
+/* --------------- TIMER --------------- */
+#timer{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+/* --------------- Box Quiz --------------- */
+#box_quiz{
+  padding: 1em;
+}
+label{
+  margin-bottom: 1rem;
+}
+input{
+  margin-bottom: .4rem;
+}
+
+.jumbotron.question{
+  border-radius: .8em;
+  padding: 1rem 3rem;
+  max-width: 80%;
+}
+.jumbotron#demo{
+  padding: 4rem 3rem;
+}
+
+.assets{
+  margin: .2rem;
+}
+.assets img{
+  display: block;
+  width: 95%;
+  max-width: 480px;
+  margin: auto;
+}
+.reponses label{
+  margin: .8rem 2em;
+}
+
+#select .reponses label{
+  font-size: 1.2rem;
+  margin: auto;
+}
+
+#ord_lst ul{
+  list-style-type: initial;
+}
+
+/* --------------- Drag & Drop --------------- */
+span.draggable_span{
+  border: 1px solid gray;
+  padding: .5rem;
+  margin: .8em;
+  border-radius: .4em;
+  cursor: grab;
+}
+input.droparea{
+  padding: .5em;
+  border-radius: .3em;
+  cursor: default;
+  caret-color: white;//couleur du curseur
+}
+#draggable_box{
+  margin: 2rem auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/* --------------- Img_btn --------------- */
+.img_btn{
+  cursor: pointer;
+  margin: 1rem;
+  border-radius: .8em;
+}
+.rad_img{
+  display: none;
+}
+
+/* --------------- ORD_LST --------------- */
+li span.draggable_span{
+  display: block;
+  //background-color: pink;
+  margin: .4em;
+}
+div.droparea{
+  padding: .2em;
+}
+
+/* --------------- RESULT --------------- */
+.stars .checked{
+  color: orange;
+}
+
+/* --------------- ORD_LST --------------- */
+#ord_lst input.droparea{
+  border: none;
+  background-color: gray;
+  padding: .1rem;
+  width: 16px;
+  display: block;
+}
+
+/* --------------- PHP TEST --------------- */
+#php_test{
+  text-align: center;
+}
+
+/* MEDIA QUERY image / rep => .content_box_quiz => assets {img + rep} */
+@media all and (min-width: 1200px){
+  .assets{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+
+}
