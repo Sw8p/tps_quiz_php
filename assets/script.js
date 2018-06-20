@@ -1,58 +1,3 @@
-/***************** fct° TIMER ******************/
-//init chrono
-var m = 0;
-var s = 0;
-
-function startTime(){
-  var chrono = document.getElementById("timer");
-  //var timer = setInterval(function(){ myTimer() }, 500);
-
-  var timer = setInterval(function(){ myChrono() }, 1000);
-
-  function myTimer() {
-      var d = new Date();
-      var m = d.getMinutes();
-      var s = d.getSeconds();
-      m = checkTime(m);
-      s = checkTime(s);
-      chrono.innerHTML =  m + " : " + s;
-
-      // arret du timer
-      if(m == 10){
-        clearInterval(timer);
-      }
-  }
-
-  function myChrono(){
-    s++;
-    if(s>59){
-      m++;
-      s=0;
-    }
-    //add style
-    if(m > 6){
-      chrono.style.color = "crimson";
-    }else if (m > 4) {
-      chrono.style.color = "orange";
-    }
-    mm = checkTime(m);
-    ss = checkTime(s);
-    chrono.innerHTML =  mm + " : " + ss;
-  }
-
-}
-
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}
-
-
-/***************** Variables nav Progress *****************/
-nav = document.getElementById("navbarSupportedContent");
-nbreItems = nav.getElementsByTagName("LI").length;
-var step = 0;
-
 
 /***************** Fct° Chrg BoxQuiz *****************/
 function loadQuiz(url, cFunction) {
@@ -80,9 +25,6 @@ function loadQuestion(xhttp, url) {
   box_quiz.removeChild(old_qbox);
   box_quiz.appendChild(qBox);
 
-  /* progress_barre */
-  step = step + 1;
-  progressBar(step);
 
   /* fct° curseur */
   if(url.includes("curseur")){
@@ -102,18 +44,6 @@ function loadQuestion(xhttp, url) {
 
 
 /*************** Function ***************/
-/* progressBar */
-function progressBar(step){
-  step = step *10;
-  var prog = document.getElementById("prog");
-  var progWidth = step.toString()+"%";
-  prog.style.width = progWidth;
-  console.log(prog.style.width);
-  prog.setAttribute("aria-valuenow", step)
-  console.log(prog.getAttribute("aria-valuenow"));
-  prog.innerHTML = step+"%";
-  console.log(prog.innerHTML);
-}
 
 /* fct° curseur */
 function curseurValue(qBox){

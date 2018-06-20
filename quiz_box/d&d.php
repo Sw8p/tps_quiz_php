@@ -18,7 +18,7 @@
         </div>
         <!-- asset.s -> Img, video... -->
         <div class="assets">
-          <img src="assets/img/Question13.jpg"
+          <img src="assets/img/Question13.jpg"/>
         </div>
         <!-- Réponse.s -->
         <div class="reponses">

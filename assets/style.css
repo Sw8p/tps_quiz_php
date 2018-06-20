@@ -2,36 +2,21 @@
 .jumbotron#head_box{
   margin-bottom: 0;
   border-radius: 0;
-  padding: 2rem;
-  padding-bottom: .5rem;
+  padding: .5rem 2rem;
+  //padding-bottom: .5rem;
 }
 .jumbotron#head_box h3{
   font-variant: small-caps;
 }
-
-/* --------------- PROGRESS_BAR --------------- */
-#progress{
-  margin-top: 2rem;
+hr.my-4{
+  margin: .5rem auto !important;
 }
-progress{
-  display: block;
-  margin: auto;
+#tne_pres_gameplays{
+  text-align: left;
 }
-#progress_barre{
-  display: none;
-  text-align: center;
+legend{
+  margin-bottom: 0;
 }
-#progress_barre_bootstrap{
-  margin: 1rem;
-}
-
-/* --------------- TIMER --------------- */
-#timer{
-  text-align: center;
-  font-weight: bolder;
-  font-size: 2em;
-}
-
 /* --------------- Box Quiz --------------- */
 #box_quiz{
   padding: 1em;
@@ -45,11 +30,11 @@ input{
 
 .jumbotron.question{
   border-radius: .8em;
-  padding: 1rem 3rem;
-  max-width: 80%;
+  padding: .5rem 3rem;
+  max-width: 90%;
 }
 .jumbotron#demo{
-  padding: 4rem 3rem;
+  padding: 2.5rem 3rem;
 }
 
 .assets{
@@ -59,6 +44,9 @@ input{
   display: block;
   width: 95%;
   max-width: 480px;
+  margin: auto;
+}
+.reponses{
   margin: auto;
 }
 .reponses label{
@@ -136,10 +124,19 @@ div.droparea{
 
 /* MEDIA QUERY image / rep => .content_box_quiz => assets {img + rep} */
 @media all and (min-width: 1200px){
-  .assets{
+  .content_box_quiz{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'intitules intitules' 'assets reponses';
     justify-content: center;
+  }
+  .intitules{
+    grid-area: intitules;
+  }
+  .assets{
+    grid-area: assets;
+  }
+  .reponses{
+    grid-area: reponses;
   }
 
 }

@@ -51,7 +51,7 @@
 
       <!-- Valid form -->
       <input class="btn btn-primary btn-lg text-center" type="button"
-      name="slct_valid" value="Valider" onclick="loadQuiz('assoc.php', loadQuestion)"/>
+      name="slct_valid" value="Valider" onclick="loadQuiz('img_btn_qru.php', loadQuestion)"/>
 
     </fieldset>
   </form>

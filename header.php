@@ -25,7 +25,6 @@
         <li class="nav-item"><a class="nav-link" href="#qrm" onclick="loadQuiz('qrm.php', loadQuestion)">QRM</a></li>
         <li class="nav-item"><a class="nav-link" href="#curseur" onclick="loadQuiz('curseur.php', loadQuestion)">Curseur</a></li>
         <li class="nav-item"><a class="nav-link" href="#txt_trou" onclick="loadQuiz('select.php', loadQuestion)">Texte à trou</a></li>
-        <li class="nav-item"><a class="nav-link" href="#assoc" onclick="loadQuiz('assoc.php', loadQuestion)">Association</a></li>
         <li class="nav-item"><a class="nav-link" href="#img_btn" onclick="loadQuiz('img_btn_qru.php', loadQuestion)">Image click</a></li>
         <li class="nav-item"><a class="nav-link" href="#img_btn" onclick="loadQuiz('img_btn_qrm.php', loadQuestion)">Image multi click</a></li>
         <li class="nav-item"><a class="nav-link" href="#d&d" onclick="loadQuiz('d&d.php', loadQuestion)">Drag & Drop</a></li>
@@ -42,7 +41,7 @@
         <div class="dropdown-menu">
           <a class="dropdown-item" href="#">Profil</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Déconnect</a>
+          <a class="dropdown-item" href="#">Deconnexion</a>
         </div>
       </li>
     </ul>
