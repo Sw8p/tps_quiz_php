@@ -1,6 +1,6 @@
 
 <?php
-$dsn = 'mysql:dbname=tps_question;host=127.0.0.1;charset=UTF8';
+$dsn = 'mysql:dbname=tps_quiz;host=127.0.0.1;charset=UTF8';
 $user = 'root';
 $password = '';
 
